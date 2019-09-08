@@ -1,0 +1,5 @@
+.movieLettersView{display: flex; min-height:260px; margin-bottom:30px; flex-wrap: wrap; justify-content: center; align-items: center; font-family: cursive;}
+.movie_word{display: flex; flex-wrap: wrap; justify-content: center;}
+.movie_letter{width: 40px; height: 60px; margin-right:15px; color:#2f72bf;  border-bottom:4px solid #000000; font-size: 43px; text-align: center; vertical-align: middle;}
+.movie_letter.empty{border-bottom: none;}
+.movie_letter .chosenRandomly{color:#000;}

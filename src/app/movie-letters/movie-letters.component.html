@@ -1,0 +1,27 @@
+<div class="movieLettersView">
+    <div class="movie_word" *ngFor="let word of movieNamePrint">
+        <div class="movie_letter" *ngFor="let letter of word.letters">
+            <div [ngClass]="{'chosenRandomly': letter.chosenRandomly}"
+                 *ngIf="letter.isSelected"    
+            >{{letter.value}}</div>
+        </div>
+        <div class="movie_letter empty"></div>
+    </div>
+</div>
+
+
+
+
+
+<!-- [ngClass]="{'empty': letter === ' '}" -->
+
+<!-- <div class="movieLettersView" *ngIf="movieNameMat">
+        <div class="movie_word" *ngFor="let wordLength of wordsLengthArr">
+            <ng-template *ngFor="let letter of words; let i = index">
+                <div class="movie_letter" *ngIf="i < wordLength">
+                    <div>{{letter}}</div>
+                </ng-template>
+            </div>
+            <div class="movie_letter empty"></div>
+        </div>
+    </div> -->
