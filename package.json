@@ -1,13 +1,16 @@
 {
   "name": "hangman",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "index.html",
+  "jomepage": "https://github.com/zoharco/hangman.git",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
